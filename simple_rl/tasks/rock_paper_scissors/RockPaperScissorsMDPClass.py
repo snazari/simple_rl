@@ -25,7 +25,7 @@ class RockPaperScissorsMDP(MarkovGameMDP):
         Returns
             (float)
         '''
-        agent_a, agent_b = action_dict.keys()[0], action_dict.keys()[1]
+        agent_a, agent_b = list(action_dict.keys())[0], list(action_dict.keys())[1]
         action_a, action_b = action_dict[agent_a], action_dict[agent_b]
 
         reward_dict = {}
